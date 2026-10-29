@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090d">
+<title>Your Life As A Movie — Become the main character</title>
+<style>
+:root{--bg:#08090d;--panel:#11131b;--line:#292b38;--text:#f7f5f0;--muted:#a5a5b2;--gold:#f6c96b;--pink:#ee8db9}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#29203a 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}.wrap{max-width:1100px;margin:auto;padding:24px}.nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0 38px}.brand{font-size:12px;letter-spacing:.18em;font-weight:800}.pill{border:1px solid var(--line);border-radius:999px;padding:9px 13px;color:var(--muted);font-size:12px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;padding:20px 0 62px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.22em;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(44px,7vw,78px);line-height:.94;letter-spacing:-.06em;margin:18px 0}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--gold)}.lead{color:#c6c5d0;line-height:1.7;max-width:470px}.cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#17120a;border:0;border-radius:12px;padding:15px 20px;font-weight:850;text-decoration:none;cursor:pointer;box-shadow:0 8px 30px #f6c96b20}.sub{font-size:12px;color:var(--muted);margin-top:12px}.poster-shell{display:flex;justify-content:center;perspective:900px}.poster{width:min(100%,360px);aspect-ratio:2/3;border-radius:8px;overflow:hidden;position:relative;background:linear-gradient(180deg,#392e44 0%,#151827 45%,#08090d 100%);border:1px solid #ffffff22;box-shadow:0 35px 80px #0009;display:flex;flex-direction:column;justify-content:space-between;padding:24px;text-align:center}.poster:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,#e3a15b55,transparent 32%),linear-gradient(120deg,transparent 20%,#fff1 48%,transparent 58%);pointer-events:none}.poster>*{position:relative}.poster-top{font-size:9px;letter-spacing:.28em;color:#e7d7c0}.poster-person{font-family:Georgia,serif;font-size:clamp(40px,6vw,62px);line-height:.9;text-shadow:0 3px 30px #000}.poster-tag{font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}.poster-title{font-family:Georgia,serif;font-size:clamp(26px,4vw,38px);text-transform:uppercase;line-height:1.0;margin:10px 0}.poster-footer{font-size:8px;letter-spacing:.12em;color:#c6c0bd}.section{padding:48px 0;border-top:1px solid var(--line)}.section h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:10px 0 18px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,#151722,#0d0e14);border:1px solid var(--line);border-radius:16px;padding:20px}.num{color:var(--gold);font-size:12px;letter-spacing:.15em}.card h3{margin:13px 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}.builder{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:start}.formbox{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.field{margin:16px 0}.field label{display:block;font-size:12px;color:#d3d0d9;margin-bottom:8px}.field input,.field select,.field textarea{width:100%;background:#090a10;color:var(--text);border:1px solid #343544;border-radius:10px;padding:13px;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:var(--gold)}.hint{font-size:11px;color:var(--muted);line-height:1.5}.previewbox{background:#0c0d13;border:1px solid var(--line);border-radius:18px;padding:18px}.previewbox .poster{width:min(100%,300px);margin:auto}.preview-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.secondary{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:13px 16px;font-weight:700;cursor:pointer}.pricebox{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px;padding:16px;border:1px solid #54452b;border-radius:14px;background:#1c1914}.price{font-size:28px;font-weight:900;color:var(--gold)}.notice{font-size:12px;line-height:1.6;color:#c6c5d0;background:#171720;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px}.footer{padding:28px 0 50px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.hidden{display:none!important}
+@media(max-width:760px){.wrap{padding:18px}.hero,.builder{grid-template-columns:1fr}.hero{gap:28px;padding-top:0}.hero h1{font-size:54px}.poster-shell{order:-1}.hero-copy{text-align:center}.lead{margin:0 auto}.cards{grid-template-columns:1fr}.nav{padding-bottom:25px}.poster{max-width:310px}.builder{gap:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav"><div class="brand">YLM<span style="color:var(--gold)">.</span> YOUR LIFE AS A MOVIE</div><div class="pill">A tiny movie about you</div></nav>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">YOU ARE THE MAIN CHARACTER</div>
+      <h1>Your life.<br>Your movie.<br><em>Your legend.</em></h1>
+      <p class="lead">Turn your name, your vibe and your story into a cinematic movie poster — then imagine it coming to life as a short trailer made for your socials.</p>
+      <a class="cta" href="#create">Create your movie — $3</a>
+      <div class="sub">Made for sharing · Designed in seconds · No film crew needed</div>
+    </div>
+    <div class="poster-shell">
+      <div class="poster" id="heroPoster">
+        <div class="poster-top">A STORY ONLY YOU COULD LIVE</div>
+        <div><div class="poster-person" id="heroName">ALEX<br>STONE</div><div class="poster-tag" id="heroGenre">THE EPIC ADVENTURE</div></div>
+        <div><div class="poster-title" id="heroTitle">BEYOND<br>THE ORDINARY</div><div class="poster-footer">ONE LIFE. ONE SHOT. ONE LEGEND.</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="eyebrow">HOW IT WORKS</div><h2>From your name to a movie moment.</h2>
+    <div class="cards">
+      <div class="card"><div class="num">01 / PERSONALIZE</div><h3>Choose your story</h3><p>Add your name, choose a genre and tell us the vibe. Your story becomes the starting point.</p></div>
+      <div class="card"><div class="num">02 / CREATE</div><h3>Meet your movie self</h3><p>Get a custom cinematic poster with a title and tagline made around your choices.</p></div>
+      <div class="card"><div class="num">03 / SHARE</div><h3>Drop the trailer</h3><p>The planned premium version turns your poster into a short vertical video ready for TikTok and Instagram.</p></div>
+    </div>
+  </section>
+  <section class="section" id="create">
+    <div class="eyebrow">THE MOVIE MAKER</div><h2>Make yourself the main character.</h2>
+    <div class="builder">
+      <div class="formbox">
+        <div class="field"><label for="name">YOUR NAME OR NICKNAME</label><input id="name" maxlength="24" placeholder="e.g. Alex Stone" value="Alex Stone"></div>
+        <div class="field"><label for="genre">PICK YOUR GENRE</label><select id="genre"><option value="Adventure">Epic Adventure</option><option value="Romance">Romance</option><option value="Comedy">Comedy</option><option value="Thriller">Thriller</option><option value="Sci-Fi">Sci-Fi</option><option value="Fantasy">Fantasy</option></select></div>
+        <div class="field"><label for="vibe">YOUR VIBE</label><select id="vibe"><option value="fearless">Fearless & unstoppable</option><option value="chaotic">Chaotic but iconic</option><option value="romantic">A hopeless romantic</option><option value="mysterious">Quietly mysterious</option><option value="funny">Born to be the plot twist</option></select></div>
+        <button class="cta" style="width:100%" id="make">Generate my movie poster</button>
+        <div class="hint" style="margin-top:12px">Prototype only: this demo creates a designed preview in your browser. Real AI image/video generation and payments are not connected yet.</div>
+      </div>
+      <div class="previewbox">
+        <div class="poster" id="resultPoster">
+          <div class="poster-top">THE WORLD IS WATCHING</div>
+          <div><div class="poster-person" id="resultName">ALEX<br>STONE</div><div class="poster-tag" id="resultGenre">THE EPIC ADVENTURE</div></div>
+          <div><div class="poster-title" id="resultTitle">BEYOND<br>THE ORDINARY</div><div class="poster-footer" id="resultTagline">ONE LIFE. ZERO REHEARSALS.</div></div>
+        </div>
+        <div class="preview-actions"><button class="secondary" id="download">Download poster preview</button><button class="secondary" id="share">Share concept</button></div>
+        <div class="pricebox"><div><div style="font-size:12px;color:var(--muted)">POSTER + SHORT TRAILER</div><strong>Made for your socials</strong></div><div class="price">$3</div></div>
+        <div class="notice">Checkout is not live yet. Before accepting real payments, connect a payment provider and only charge once the real deliverable can be generated and delivered reliably.</div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="eyebrow">BUILT TO BE SHARED</div><h2>Your movie deserves an audience.</h2>
+    <p class="lead">The launch plan: post short before-and-after demos, show different genres, invite people to make their own movie, and track which videos bring real visitors and purchases.</p>
+  </section>
+  <footer class="footer"><div>© 2026 YOUR LIFE AS A MOVIE — concept prototype</div><div>Privacy · Terms · Contact (to be added before launch)</div></footer>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const titles={
+ Adventure:["BEYOND THE ORDINARY","ONE LIFE. ZERO REHEARSALS."],
+ Romance:["THE WAY WE FOUND US","SOME STORIES FIND YOU."],
+ Comedy:["A BEAUTIFUL DISASTER","THE PLOT WAS NEVER READY."],
+ Thriller:["EVERYTHING HAS A PRICE","TRUST NO FIRST IMPRESSION."],
+ "Sci-Fi":["AFTER THE LAST STAR","THE FUTURE KNOWS YOUR NAME."],
+ Fantasy:["BORN OF ANOTHER WORLD","DESTINY HAS A NEW NAME."]
+};
+const genres={Adventure:"THE EPIC ADVENTURE",Romance:"A LOVE STORY",Comedy:"THE COMEDY EVENT",Thriller:"THE EDGE-OF-YOUR-SEAT THRILLER","Sci-Fi":"A FUTURE UNWRITTEN",Fantasy:"A LEGEND AWAKENS"};
+function update(){
+ let name=($("name").value.trim()||"Your Name").toUpperCase().replace(/[<>]/g,"");
+ let genre=$("genre").value, vibe=$("vibe").value;
+ let lines=name.split(/\s+/).slice(0,3).join("<br>");
+ $("resultName").innerHTML=lines;$("resultGenre").textContent=genres[genre];
+ $("resultTitle").innerHTML=titles[genre][0].replace(" ","<br>");
+ const vibeLines={fearless:"ONE LIFE. ZERO REHEARSALS.",chaotic:"THE PLOT WAS NEVER READY.",romantic:"SOME STORIES FIND YOU.",mysterious:"NOT EVERY SECRET STAYS BURIED.",funny:"THE PLOT TWIST IS YOU."};
+ $("resultTagline").textContent=vibeLines[vibe];
+ $("heroName").innerHTML=lines;$("heroGenre").textContent=genres[genre];$("heroTitle").innerHTML=titles[genre][0].replace(" ","<br>");
+}
+$("make").addEventListener("click",update);
+["name","genre","vibe"].forEach(id=>$(id).addEventListener("input",update));
+$("download").addEventListener("click",()=>{
+ const p=$("resultPoster"), canvas=document.createElement("canvas"),ctx=canvas.getContext("2d");
+ canvas.width=900;canvas.height=1350;
+ const grad=ctx.createLinearGradient(0,0,0,1350);grad.addColorStop(0,"#392e44");grad.addColorStop(.5,"#151827");grad.addColorStop(1,"#08090d");ctx.fillStyle=grad;ctx.fillRect(0,0,900,1350);
+ const glow=ctx.createRadialGradient(450,470,20,450,470,380);glow.addColorStop(0,"#e3a15b66");glow.addColorStop(1,"#e3a15b00");ctx.fillStyle=glow;ctx.fillRect(0,0,900,1350);
+ ctx.textAlign="center";ctx.fillStyle="#e7d7c0";ctx.font="20px Arial";ctx.fillText("THE WORLD IS WATCHING",450,90);
+ ctx.fillStyle="#f7f5f0";ctx.font="bold 88px Georgia";let n=$("name").value.trim().toUpperCase()||"YOUR NAME";let nameLines=n.split(/\s+/).slice(0,3);nameLines.forEach((l,i)=>ctx.fillText(l,450,450+i*90,800));
+ ctx.fillStyle="#f6c96b";ctx.font="bold 22px Arial";ctx.fillText(genres[$("genre").value],450,760);
+ let title=titles[$("genre").value][0].split(" ");ctx.fillStyle="#fffaf0";ctx.font="bold 58px Georgia";ctx.fillText(title.slice(0,Math.ceil(title.length/2)).join(" "),450,980,820);ctx.fillText(title.slice(Math.ceil(title.length/2)).join(" "),450,1050,820);
+ ctx.fillStyle="#c6c0bd";ctx.font="18px Arial";ctx.fillText($("resultTagline").textContent,450,1190);
+ ctx.fillStyle="#a5a5b2";ctx.font="13px Arial";ctx.fillText("CONCEPT PREVIEW • YOUR LIFE AS A MOVIE",450,1290);
+ const a=document.createElement("a");a.download="your-life-as-a-movie-preview.png";a.href=canvas.toDataURL("image/png");a.click();
+});
+$("share").addEventListener("click",async()=>{
+ const text="I just made myself the main character. YOUR LIFE AS A MOVIE — concept preview.";
+ if(navigator.share){try{await navigator.share({title:"Your Life As A Movie",text})}catch(e){}}
+ else if(navigator.clipboard){navigator.clipboard.writeText(text);alert("Share text copied. Add your live site link before launch.");}
+ else alert(text);
+});
+update();
+</script>
+</body>
+</html>
