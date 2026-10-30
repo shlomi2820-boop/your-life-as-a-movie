@@ -4,12 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#08090d">
+<meta name="description" content="Turn your face, your vibe and your story into a cinematic movie starring you. Create your personal movie concept.">
+<meta property="og:title" content="Your Life As A Movie">
+<meta property="og:description" content="Your life. Your movie. Your legend.">
+<meta property="og:type" content="website">
 <title>Your Life As A Movie — Become the main character</title>
 <style>
 :root{--bg:#08090d;--panel:#11131b;--line:#292b38;--text:#f7f5f0;--muted:#a5a5b2;--gold:#f6c96b;--pink:#ee8db9}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#29203a 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 a{color:inherit}.wrap{width:min(1080px,calc(100% - 48px));margin:0 auto;padding:18px 0}.nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0 22px;min-height:58px}.brand{font-size:12px;letter-spacing:.18em;font-weight:800}.pill{border:1px solid var(--line);border-radius:999px;padding:9px 13px;color:var(--muted);font-size:12px}
 .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center;padding:12px 0 38px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.22em;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(44px,7vw,78px);line-height:.94;letter-spacing:-.06em;margin:18px 0}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--gold)}.lead{color:#c6c5d0;line-height:1.7;max-width:470px}.cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#17120a;border:0;border-radius:12px;padding:15px 20px;font-weight:850;text-decoration:none;cursor:pointer;box-shadow:0 8px 30px #f6c96b20}.sub{font-size:12px;color:var(--muted);margin-top:12px}.poster-shell{display:flex;justify-content:center;perspective:900px}.poster{width:min(100%,360px);aspect-ratio:2/3;border-radius:8px;overflow:hidden;position:relative;background:linear-gradient(180deg,#392e44 0%,#151827 45%,#08090d 100%);border:1px solid #ffffff22;box-shadow:0 35px 80px #0009;display:flex;flex-direction:column;justify-content:space-between;padding:24px;text-align:center}.poster:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,#e3a15b55,transparent 32%),linear-gradient(120deg,transparent 20%,#fff1 48%,transparent 58%);pointer-events:none}.poster>*{position:relative}.poster-top{font-size:9px;letter-spacing:.28em;color:#e7d7c0}.poster-person{font-family:Georgia,serif;font-size:clamp(40px,6vw,62px);line-height:.9;text-shadow:0 3px 30px #000}.poster-tag{font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}.poster-title{font-family:Georgia,serif;font-size:clamp(26px,4vw,38px);text-transform:uppercase;line-height:1.0;margin:10px 0}.poster-footer{font-size:8px;letter-spacing:.12em;color:#c6c0bd}.section{padding:34px 0;border-top:1px solid var(--line)}.section h2{font-size:clamp(25px,3vw,34px);letter-spacing:-.035em;margin:8px 0 14px;font-weight:700}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card{background:linear-gradient(145deg,#151722,#0d0e14);border:1px solid var(--line);border-radius:12px;padding:16px}.num{color:var(--gold);font-size:12px;letter-spacing:.15em}.card h3{margin:13px 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}.builder{display:grid;grid-template-columns:.85fr 1.15fr;gap:16px;align-items:start}.formbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}.field{margin:16px 0}.field label{display:block;font-size:12px;color:#d3d0d9;margin-bottom:8px}.field input,.field select,.field textarea{width:100%;background:#090a10;color:var(--text);border:1px solid #343544;border-radius:10px;padding:13px;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:var(--gold)}.hint{font-size:11px;color:var(--muted);line-height:1.5}.previewbox{background:#0c0d13;border:1px solid var(--line);border-radius:12px;padding:16px}.previewbox .poster{width:min(100%,300px);margin:auto}.preview-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.secondary{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:13px 16px;font-weight:700;cursor:pointer}.pricebox{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px;padding:16px;border:1px solid #54452b;border-radius:14px;background:#1c1914}.price{font-size:28px;font-weight:900;color:var(--gold)}.notice{font-size:12px;line-height:1.6;color:#c6c5d0;background:#171720;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px}.footer{padding:28px 0 50px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.hidden{display:none!important}
+.photo-upload{display:block;width:100%;padding:13px;border:1px dashed #655638;border-radius:10px;background:#12131b;color:#d8d5df;font:inherit;font-size:12px}.story-preview{margin-top:14px;padding:15px;border:1px solid #4a3e2b;border-radius:12px;background:linear-gradient(135deg,#211d18,#11131b)}.story-preview h3{margin:0 0 8px;font-family:Georgia,serif;font-size:20px;color:var(--gold)}.story-preview p{margin:0;color:#d0ced7;font-size:13px;line-height:1.65;white-space:pre-wrap}.poster.photo-active{background-size:cover!important;background-position:center!important}.local-note{font-size:11px;color:#9fc9a9;line-height:1.5;margin-top:8px}
 
 .payment-section{margin-top:18px;padding:18px;background:linear-gradient(145deg,#171925,#0d0e14);border:1px solid #343544;border-radius:12px}
 .payment-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
@@ -87,9 +92,11 @@ a{color:inherit}.wrap{width:min(1080px,calc(100% - 48px));margin:0 auto;padding:
     <div class="builder">
       <div class="formbox">
         <div class="field"><label for="name">YOUR NAME OR NICKNAME</label><input id="name" maxlength="24" placeholder="e.g. Alex Stone" value="Alex Stone"></div>
+        <div class="field"><label for="photo">ADD YOUR PHOTO (OPTIONAL)</label><input class="photo-upload" id="photo" type="file" accept="image/*"><div class="local-note">Your photo stays on this device in this demo. It is not uploaded or stored.</div></div>
         <div class="field"><label for="genre">PICK YOUR GENRE</label><select id="genre"><option value="Adventure">Epic Adventure</option><option value="Romance">Romance</option><option value="Comedy">Comedy</option><option value="Thriller">Thriller</option><option value="Sci-Fi">Sci-Fi</option><option value="Fantasy">Fantasy</option></select></div>
         <div class="field"><label for="vibe">YOUR VIBE</label><select id="vibe"><option value="fearless">Fearless & unstoppable</option><option value="chaotic">Chaotic but iconic</option><option value="romantic">A hopeless romantic</option><option value="mysterious">Quietly mysterious</option><option value="funny">Born to be the plot twist</option></select></div>
-        <button class="cta" style="width:100%" id="make">Generate my movie poster</button>
+        <div class="field"><label for="story">A LITTLE ABOUT YOUR STORY (OPTIONAL)</label><textarea id="story" rows="3" maxlength="500" placeholder="A dream you are chasing, a turning point, or what makes your story yours..."></textarea></div>
+        <button class="cta" style="width:100%" id="make">Create my movie concept</button>
         <div class="hint" style="margin-top:12px">Prototype only: this demo creates a designed preview in your browser. Real AI image/video generation and payments are not connected yet.</div>
       </div>
       <div class="previewbox">
@@ -99,6 +106,7 @@ a{color:inherit}.wrap{width:min(1080px,calc(100% - 48px));margin:0 auto;padding:
           <div><div class="poster-title" id="resultTitle">BEYOND<br>THE ORDINARY</div><div class="poster-footer" id="resultTagline">ONE LIFE. ZERO REHEARSALS.</div></div>
         </div>
         <div class="preview-actions"><button class="secondary" id="download">Download poster preview</button><button class="secondary" id="share">Share concept</button></div>
+        <div class="story-preview" aria-live="polite"><h3 id="conceptHeading">Your story is taking shape</h3><p id="conceptText">Choose a genre, add a few details and create a first-look concept for your movie.</p><div class="preview-actions"><button class="secondary" id="downloadBrief" type="button">Download story brief</button></div></div>
         <div class="pricebox"><div><div style="font-size:12px;color:var(--muted)">PERSONAL MOVIE EXPERIENCE</div><strong>30–60 sec teaser · Full film up to 5 min</strong></div><div class="price">From $3</div></div>
         <div class="notice">Checkout is not live yet. Before accepting real payments, connect a payment provider and only charge once the real deliverable can be generated and delivered reliably.</div>
       </div>
@@ -179,18 +187,40 @@ const titles={
  Fantasy:["BORN OF ANOTHER WORLD","DESTINY HAS A NEW NAME."]
 };
 const genres={Adventure:"THE EPIC ADVENTURE",Romance:"A LOVE STORY",Comedy:"THE COMEDY EVENT",Thriller:"THE EDGE-OF-YOUR-SEAT THRILLER","Sci-Fi":"A FUTURE UNWRITTEN",Fantasy:"A LEGEND AWAKENS"};
+let uploadedPhotoData="";
+function escapeHTML(value){return value.replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));}
 function update(){
  let name=($("name").value.trim()||"Your Name").toUpperCase().replace(/[<>]/g,"");
  let genre=$("genre").value, vibe=$("vibe").value;
  let lines=name.split(/\s+/).slice(0,3).join("<br>");
- $("resultName").innerHTML=lines;$("resultGenre").textContent=genres[genre];
+ $("resultName").innerHTML=lines.split("<br>").map(escapeHTML).join("<br>");$("resultGenre").textContent=genres[genre];
  $("resultTitle").innerHTML=titles[genre][0].replace(" ","<br>");
  const vibeLines={fearless:"ONE LIFE. ZERO REHEARSALS.",chaotic:"THE PLOT WAS NEVER READY.",romantic:"SOME STORIES FIND YOU.",mysterious:"NOT EVERY SECRET STAYS BURIED.",funny:"THE PLOT TWIST IS YOU."};
  $("resultTagline").textContent=vibeLines[vibe];
- $("heroName").innerHTML=lines;$("heroGenre").textContent=genres[genre];$("heroTitle").innerHTML=titles[genre][0].replace(" ","<br>");
+ $("heroName").innerHTML=lines.split("<br>").map(escapeHTML).join("<br>");$("heroGenre").textContent=genres[genre];$("heroTitle").innerHTML=titles[genre][0].replace(" ","<br>");
+ const story=$("story").value.trim();
+ const safeName=escapeHTML(name);
+ const storyLine=story?"Your personal story: "+story:"Your movie begins with a blank page — the details are yours to define.";
+ $("conceptHeading").textContent=safeName+" — "+genres[genre].toLowerCase();
+ $("conceptText").textContent=storyLine+"\\n\\nTone: "+vibeLines[vibe]+"\\nGenre: "+genre+"\\n\\nThis is a creative concept preview. The finished film will require connected AI video production.";
+ [$("resultPoster"),$("heroPoster")].forEach(p=>{if(uploadedPhotoData){p.style.backgroundImage='linear-gradient(180deg,rgba(8,9,13,.18),rgba(8,9,13,.88)),url("'+uploadedPhotoData+'")';p.classList.add("photo-active");}else{p.style.backgroundImage="";p.classList.remove("photo-active");}});
 }
 $("make").addEventListener("click",update);
-["name","genre","vibe"].forEach(id=>$(id).addEventListener("input",update));
+["name","genre","vibe","story"].forEach(id=>$(id).addEventListener("input",update));
+$("photo").addEventListener("change",event=>{
+ const file=event.target.files&&event.target.files[0];
+ if(!file){uploadedPhotoData="";update();return;}
+ if(!file.type.startsWith("image/")){alert("Please choose an image file.");event.target.value="";return;}
+ if(file.size>8*1024*1024){alert("Please choose an image under 8 MB.");event.target.value="";return;}
+ const reader=new FileReader();
+ reader.onload=()=>{uploadedPhotoData=String(reader.result||"");update();};
+ reader.onerror=()=>alert("The photo could not be previewed. Please try another image.");
+ reader.readAsDataURL(file);
+});
+$("downloadBrief").addEventListener("click",()=>{
+ const brief=["YOUR LIFE AS A MOVIE — STORY BRIEF","Name: "+($("name").value.trim()||"Not set"),"Genre: "+$("genre").value,"Vibe: "+$("vibe").value,"Story: "+($("story").value.trim()||"Not provided"),"","Concept preview only. AI video generation and payment are not connected."].join("\\n");
+ const blob=new Blob([brief],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="my-movie-story-brief.txt";a.click();URL.revokeObjectURL(url);
+});
 $("download").addEventListener("click",()=>{
  const p=$("resultPoster"), canvas=document.createElement("canvas"),ctx=canvas.getContext("2d");
  canvas.width=900;canvas.height=1350;
