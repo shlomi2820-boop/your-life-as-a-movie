@@ -202,7 +202,7 @@ function update(){
  const safeName=escapeHTML(name);
  const storyLine=story?"Your personal story: "+story:"Your movie begins with a blank page — the details are yours to define.";
  $("conceptHeading").textContent=safeName+" — "+genres[genre].toLowerCase();
- $("conceptText").textContent=storyLine+"\\n\\nTone: "+vibeLines[vibe]+"\\nGenre: "+genre+"\\n\\nThis is a creative concept preview. The finished film will require connected AI video production.";
+ $("conceptText").textContent=storyLine+"\n\nTone: "+vibeLines[vibe]+"\nGenre: "+genre+"\n\nThis is a creative concept preview. The finished film will require connected AI video production.";
  [$("resultPoster"),$("heroPoster")].forEach(p=>{if(uploadedPhotoData){p.style.backgroundImage='linear-gradient(180deg,rgba(8,9,13,.18),rgba(8,9,13,.88)),url("'+uploadedPhotoData+'")';p.classList.add("photo-active");}else{p.style.backgroundImage="";p.classList.remove("photo-active");}});
 }
 $("make").addEventListener("click",update);
@@ -218,7 +218,7 @@ $("photo").addEventListener("change",event=>{
  reader.readAsDataURL(file);
 });
 $("downloadBrief").addEventListener("click",()=>{
- const brief=["YOUR LIFE AS A MOVIE — STORY BRIEF","Name: "+($("name").value.trim()||"Not set"),"Genre: "+$("genre").value,"Vibe: "+$("vibe").value,"Story: "+($("story").value.trim()||"Not provided"),"","Concept preview only. AI video generation and payment are not connected."].join("\\n");
+ const brief=["YOUR LIFE AS A MOVIE — STORY BRIEF","Name: "+($("name").value.trim()||"Not set"),"Genre: "+$("genre").value,"Vibe: "+$("vibe").value,"Story: "+($("story").value.trim()||"Not provided"),"","Concept preview only. AI video generation and payment are not connected."].join("\n");
  const blob=new Blob([brief],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="my-movie-story-brief.txt";a.click();URL.revokeObjectURL(url);
 });
 $("download").addEventListener("click",()=>{
