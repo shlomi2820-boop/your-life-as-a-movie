@@ -10,7 +10,25 @@
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#29203a 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 a{color:inherit}.wrap{max-width:1100px;margin:auto;padding:24px}.nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0 38px}.brand{font-size:12px;letter-spacing:.18em;font-weight:800}.pill{border:1px solid var(--line);border-radius:999px;padding:9px 13px;color:var(--muted);font-size:12px}
 .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;padding:20px 0 62px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.22em;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(44px,7vw,78px);line-height:.94;letter-spacing:-.06em;margin:18px 0}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--gold)}.lead{color:#c6c5d0;line-height:1.7;max-width:470px}.cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#17120a;border:0;border-radius:12px;padding:15px 20px;font-weight:850;text-decoration:none;cursor:pointer;box-shadow:0 8px 30px #f6c96b20}.sub{font-size:12px;color:var(--muted);margin-top:12px}.poster-shell{display:flex;justify-content:center;perspective:900px}.poster{width:min(100%,360px);aspect-ratio:2/3;border-radius:8px;overflow:hidden;position:relative;background:linear-gradient(180deg,#392e44 0%,#151827 45%,#08090d 100%);border:1px solid #ffffff22;box-shadow:0 35px 80px #0009;display:flex;flex-direction:column;justify-content:space-between;padding:24px;text-align:center}.poster:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,#e3a15b55,transparent 32%),linear-gradient(120deg,transparent 20%,#fff1 48%,transparent 58%);pointer-events:none}.poster>*{position:relative}.poster-top{font-size:9px;letter-spacing:.28em;color:#e7d7c0}.poster-person{font-family:Georgia,serif;font-size:clamp(40px,6vw,62px);line-height:.9;text-shadow:0 3px 30px #000}.poster-tag{font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}.poster-title{font-family:Georgia,serif;font-size:clamp(26px,4vw,38px);text-transform:uppercase;line-height:1.0;margin:10px 0}.poster-footer{font-size:8px;letter-spacing:.12em;color:#c6c0bd}.section{padding:48px 0;border-top:1px solid var(--line)}.section h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:10px 0 18px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,#151722,#0d0e14);border:1px solid var(--line);border-radius:16px;padding:20px}.num{color:var(--gold);font-size:12px;letter-spacing:.15em}.card h3{margin:13px 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}.builder{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:start}.formbox{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.field{margin:16px 0}.field label{display:block;font-size:12px;color:#d3d0d9;margin-bottom:8px}.field input,.field select,.field textarea{width:100%;background:#090a10;color:var(--text);border:1px solid #343544;border-radius:10px;padding:13px;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:var(--gold)}.hint{font-size:11px;color:var(--muted);line-height:1.5}.previewbox{background:#0c0d13;border:1px solid var(--line);border-radius:18px;padding:18px}.previewbox .poster{width:min(100%,300px);margin:auto}.preview-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.secondary{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:13px 16px;font-weight:700;cursor:pointer}.pricebox{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px;padding:16px;border:1px solid #54452b;border-radius:14px;background:#1c1914}.price{font-size:28px;font-weight:900;color:var(--gold)}.notice{font-size:12px;line-height:1.6;color:#c6c5d0;background:#171720;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px}.footer{padding:28px 0 50px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.hidden{display:none!important}
-@media(max-width:760px){.wrap{padding:18px}.hero,.builder{grid-template-columns:1fr}.hero{gap:28px;padding-top:0}.hero h1{font-size:54px}.poster-shell{order:-1}.hero-copy{text-align:center}.lead{margin:0 auto}.cards{grid-template-columns:1fr}.nav{padding-bottom:25px}.poster{max-width:310px}.builder{gap:16px}}
+
+.payment-section{margin-top:24px;padding:22px;background:linear-gradient(145deg,#171925,#0d0e14);border:1px solid #343544;border-radius:18px}
+.payment-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.payment-heading h3{font-size:21px;margin:0}.secure{font-size:11px;color:#9fc9a9;letter-spacing:.08em}
+.plan-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.plan{display:block;text-align:left;background:#0a0b11;border:1px solid #393b49;border-radius:14px;padding:16px;color:var(--text);cursor:pointer}
+.plan.selected{border:2px solid var(--gold);background:#211d16;padding:15px}
+.plan strong{display:block;font-size:15px;margin-bottom:7px}.plan small{color:var(--muted);line-height:1.5}.plan-price{display:block;color:var(--gold);font-size:25px;font-weight:900;margin-top:12px}
+.pay-label{font-size:11px;color:var(--muted);letter-spacing:.14em;margin:22px 0 10px}
+.pay-methods{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pay-method{min-height:56px;border-radius:11px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:17px;font-weight:800;letter-spacing:-.03em}
+.apple-pay{background:#fff;color:#050505}.paypal{background:#fff;color:#123b70}.paypal .pay-pal{color:#1688d4}
+.card-methods{display:flex;justify-content:center;gap:18px;align-items:center;color:#d9dbe5;font-size:13px;font-weight:900;margin-top:13px}
+.order-total{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:20px;padding-top:17px}
+.order-total span{color:var(--muted);font-size:13px}.order-total strong{font-size:27px;color:var(--gold)}
+.order-button{width:100%;margin-top:16px;min-height:52px;border:0;border-radius:12px;background:var(--gold);color:#17120a;font-size:15px;font-weight:900;cursor:pointer}
+.payment-footnote{font-size:11px;line-height:1.55;color:var(--muted);text-align:center;margin:12px 0 0}
+@media(max-width:520px){.plan-list{grid-template-columns:1fr}.payment-section{padding:16px}.payment-heading{align-items:flex-start;flex-direction:column}}
+\n@media(max-width:760px){.wrap{padding:18px}.hero,.builder{grid-template-columns:1fr}.hero{gap:28px;padding-top:0}.hero h1{font-size:54px}.poster-shell{order:-1}.hero-copy{text-align:center}.lead{margin:0 auto}.cards{grid-template-columns:1fr}.nav{padding-bottom:25px}.poster{max-width:310px}.builder{gap:16px}}
 </style>
 </head>
 <body>
@@ -74,6 +92,38 @@ a{color:inherit}.wrap{max-width:1100px;margin:auto;padding:24px}.nav{display:fle
       <div class="card"><div class="num">03 / COMING NEXT</div><h3>Your story, expanded</h3><p>More genres, story styles and personalized scenes as the production experience grows.</p><div class="price" style="margin-top:16px">In development</div></div>
     </div>
     <div class="notice">These are planned product options, not an active checkout. AI video generation, photo processing and payment are not connected yet. No payment is collected in this prototype.</div>
+  </section>
+
+  <section class="section" id="checkout">
+    <div class="eyebrow">YOUR MOVIE STARTS HERE</div>
+    <h2>Choose your film. Make it yours.</h2>
+    <div class="payment-section">
+      <div class="payment-heading">
+        <h3>Secure checkout</h3>
+        <div class="secure">⌑ SECURE PAYMENT</div>
+      </div>
+      <div class="plan-list">
+        <button class="plan selected" type="button" data-plan="teaser" aria-pressed="true">
+          <strong>THE CINEMATIC TEASER</strong>
+          <small>30–60 seconds · A powerful short film starring you</small>
+          <span class="plan-price">$3.00</span>
+        </button>
+        <button class="plan" type="button" data-plan="full" aria-pressed="false">
+          <strong>THE FULL MOVIE</strong>
+          <small>Up to 5 minutes · Your story on the big screen</small>
+          <span class="plan-price">$9.99</span>
+        </button>
+      </div>
+      <div class="pay-label">PAYMENT METHODS</div>
+      <div class="pay-methods" aria-label="Planned payment methods">
+        <div class="pay-method apple-pay"><span style="font-size:24px"></span> Pay</div>
+        <div class="pay-method paypal"><span>Pay</span><span class="pay-pal">Pal</span></div>
+      </div>
+      <div class="card-methods"><span>VISA</span><span>mastercard</span><span>AMERICAN EXPRESS</span></div>
+      <div class="order-total"><span>Your selected movie</span><strong id="checkoutTotal">$3.00</strong></div>
+      <button class="order-button" type="button" id="checkoutButton">Continue to secure payment</button>
+      <p class="payment-footnote">Payment buttons are a visual preview only. Apple Pay, PayPal and card processing are not connected yet. You will not be charged.</p>
+    </div>
   </section>
   <footer class="footer"><div>© 2026 YOUR LIFE AS A MOVIE — concept prototype</div><div>Privacy · Terms · Contact (to be added before launch)</div></footer>
 </div>
