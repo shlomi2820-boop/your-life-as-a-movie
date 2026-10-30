@@ -3,228 +3,174 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#08090d">
-<title>Your Life As A Movie — Become the main character</title>
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="Your story deserves the big screen. Create a cinematic film concept starring you.">
+<title>Your Life As A Movie — Your story. The big screen.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#08090d;--panel:#11131b;--line:#292b38;--text:#f7f5f0;--muted:#a5a5b2;--gold:#f6c96b;--pink:#ee8db9}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#29203a 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-a{color:inherit}.wrap{max-width:1100px;margin:auto;padding:24px}.nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0 38px}.brand{font-size:12px;letter-spacing:.18em;font-weight:800}.pill{border:1px solid var(--line);border-radius:999px;padding:9px 13px;color:var(--muted);font-size:12px}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;padding:20px 0 62px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.22em;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(44px,7vw,78px);line-height:.94;letter-spacing:-.06em;margin:18px 0}.hero h1 em{font-family:Georgia,serif;font-weight:400;color:var(--gold)}.lead{color:#c6c5d0;line-height:1.7;max-width:470px}.cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#17120a;border:0;border-radius:12px;padding:15px 20px;font-weight:850;text-decoration:none;cursor:pointer;box-shadow:0 8px 30px #f6c96b20}.sub{font-size:12px;color:var(--muted);margin-top:12px}.poster-shell{display:flex;justify-content:center;perspective:900px}.poster{width:min(100%,360px);aspect-ratio:2/3;border-radius:8px;overflow:hidden;position:relative;background:linear-gradient(180deg,#392e44 0%,#151827 45%,#08090d 100%);border:1px solid #ffffff22;box-shadow:0 35px 80px #0009;display:flex;flex-direction:column;justify-content:space-between;padding:24px;text-align:center}.poster:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,#e3a15b55,transparent 32%),linear-gradient(120deg,transparent 20%,#fff1 48%,transparent 58%);pointer-events:none}.poster>*{position:relative}.poster-top{font-size:9px;letter-spacing:.28em;color:#e7d7c0}.poster-person{font-family:Georgia,serif;font-size:clamp(40px,6vw,62px);line-height:.9;text-shadow:0 3px 30px #000}.poster-tag{font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}.poster-title{font-family:Georgia,serif;font-size:clamp(26px,4vw,38px);text-transform:uppercase;line-height:1.0;margin:10px 0}.poster-footer{font-size:8px;letter-spacing:.12em;color:#c6c0bd}.section{padding:48px 0;border-top:1px solid var(--line)}.section h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:10px 0 18px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,#151722,#0d0e14);border:1px solid var(--line);border-radius:16px;padding:20px}.num{color:var(--gold);font-size:12px;letter-spacing:.15em}.card h3{margin:13px 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}.builder{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:start}.formbox{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.field{margin:16px 0}.field label{display:block;font-size:12px;color:#d3d0d9;margin-bottom:8px}.field input,.field select,.field textarea{width:100%;background:#090a10;color:var(--text);border:1px solid #343544;border-radius:10px;padding:13px;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:var(--gold)}.hint{font-size:11px;color:var(--muted);line-height:1.5}.previewbox{background:#0c0d13;border:1px solid var(--line);border-radius:18px;padding:18px}.previewbox .poster{width:min(100%,300px);margin:auto}.preview-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.secondary{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:13px 16px;font-weight:700;cursor:pointer}.pricebox{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:18px;padding:16px;border:1px solid #54452b;border-radius:14px;background:#1c1914}.price{font-size:28px;font-weight:900;color:var(--gold)}.notice{font-size:12px;line-height:1.6;color:#c6c5d0;background:#171720;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:14px}.footer{padding:28px 0 50px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.hidden{display:none!important}
-
-.payment-section{margin-top:24px;padding:22px;background:linear-gradient(145deg,#171925,#0d0e14);border:1px solid #343544;border-radius:18px}
-.payment-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
-.payment-heading h3{font-size:21px;margin:0}.secure{font-size:11px;color:#9fc9a9;letter-spacing:.08em}
-.plan-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
-.plan{display:block;text-align:left;background:#0a0b11;border:1px solid #393b49;border-radius:14px;padding:16px;color:var(--text);cursor:pointer}
-.plan.selected{border:2px solid var(--gold);background:#211d16;padding:15px}
-.plan strong{display:block;font-size:15px;margin-bottom:7px}.plan small{color:var(--muted);line-height:1.5}.plan-price{display:block;color:var(--gold);font-size:25px;font-weight:900;margin-top:12px}
-.pay-label{font-size:11px;color:var(--muted);letter-spacing:.14em;margin:22px 0 10px}
-.pay-methods{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.pay-method{min-height:56px;border-radius:11px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:17px;font-weight:800;letter-spacing:-.03em}
-.apple-pay{background:#fff;color:#050505}.paypal{background:#fff;color:#123b70}.paypal .pay-pal{color:#1688d4}
-.card-methods{display:flex;justify-content:center;gap:18px;align-items:center;color:#d9dbe5;font-size:13px;font-weight:900;margin-top:13px}
-.order-total{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:20px;padding-top:17px}
-.order-total span{color:var(--muted);font-size:13px}.order-total strong{font-size:27px;color:var(--gold)}
-.order-button{width:100%;margin-top:16px;min-height:52px;border:0;border-radius:12px;background:var(--gold);color:#17120a;font-size:15px;font-weight:900;cursor:pointer}
-.payment-footnote{font-size:11px;line-height:1.55;color:var(--muted);text-align:center;margin:12px 0 0}
-@media(max-width:520px){.plan-list{grid-template-columns:1fr}.payment-section{padding:16px}.payment-heading{align-items:flex-start;flex-direction:column}}
-\n@media(max-width:760px){.wrap{padding:18px}.hero,.builder{grid-template-columns:1fr}.hero{gap:28px;padding-top:0}.hero h1{font-size:54px}.poster-shell{order:-1}.hero-copy{text-align:center}.lead{margin:0 auto}.cards{grid-template-columns:1fr}.nav{padding-bottom:25px}.poster{max-width:310px}.builder{gap:16px}}
-
-/* Premium demo checkout */
-.checkout-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:18px}
-.checkout-panel{background:#0b0d14;border:1px solid #303343;border-radius:16px;padding:17px}
-.demo-tag{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid #67552f;border-radius:999px;color:#f6c96b;font-size:10px;font-weight:800;letter-spacing:.1em}
-.demo-tag:before{content:"";width:6px;height:6px;border-radius:50%;background:#f6c96b}
-.money-card{position:relative;overflow:hidden;min-height:170px;border-radius:16px;padding:19px;background:linear-gradient(130deg,#34394c,#171b2a 58%,#51402a);border:1px solid #ffffff30;box-shadow:0 16px 35px #0006}
-.money-card:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #ffffff20;border-radius:50%;right:-70px;top:-105px;box-shadow:0 0 0 18px #ffffff08,0 0 0 38px #ffffff06}
-.money-card-top,.money-card-bottom{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
-.money-card-brand{font-weight:900;font-size:12px;letter-spacing:.14em}
-.money-chip{width:34px;height:25px;border-radius:6px;background:linear-gradient(135deg,#e9d49a,#9d8958);border:1px solid #fff6}
-.money-number{font-size:19px;letter-spacing:.16em;margin:24px 0 18px;position:relative;z-index:1}
-.money-card-bottom{font-size:10px;color:#e2e0e8;letter-spacing:.08em}
-.money-currency{font-size:26px;font-weight:900;color:#f6c96b}
-.checkout-summary{display:flex;justify-content:space-between;gap:12px;padding:12px 0;color:#c5c6d1;font-size:13px;border-bottom:1px solid #292c39}
-.checkout-summary.total{border:0;color:#fff;font-size:14px;font-weight:800;padding-top:17px}
-.checkout-summary.total strong{font-size:27px;color:#f6c96b}
-.method-option{display:flex;align-items:center;gap:12px;padding:13px;margin-top:9px;border:1px solid #353848;border-radius:12px;background:#11141e;color:#f7f5f0;font-size:14px;font-weight:750}
-.method-option .method-mark{margin-left:auto;color:#b7b8c5;font-size:11px}
-.method-symbol{width:36px;height:25px;display:grid;place-items:center;background:#fff;border-radius:6px;color:#111;font-size:10px;font-weight:950}
-.method-option.demo-selected{border-color:#f6c96b;background:#211d16}
-.method-option.paypal-row .method-symbol{color:#123b70;font-size:13px}
-.checkout-foot{font-size:11px;line-height:1.55;color:#a5a5b2;margin:13px 0 0}
-@media(max-width:700px){.checkout-grid{grid-template-columns:1fr}.money-number{font-size:17px}}
-\n</style>
+:root{--bg:#08090b;--panel:#111318;--panel2:#17191f;--line:#292c33;--ink:#f5f1e9;--muted:#a7a49d;--gold:#d9b879;--gold2:#f1d7a4;--green:#a7c5a4;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{width:min(1160px,calc(100% - 48px));margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}
+.logo{font-size:12px;font-weight:800;letter-spacing:.2em}.logo b{color:var(--gold);font-size:17px}.navlinks{display:flex;gap:30px;color:#c3c0b9;font-size:12px}.navlinks a:hover{color:var(--gold2)}.nav-cta{border:1px solid #756342;border-radius:999px;padding:11px 17px;font-size:11px;letter-spacing:.06em;color:var(--gold2)}
+.hero{min-height:650px;display:grid;grid-template-columns:1fr .88fr;align-items:center;gap:64px;padding:76px 0 82px;position:relative}
+.hero-copy{position:relative;z-index:2}.eyebrow{color:var(--gold);font-size:10px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:25px;height:1px;background:var(--gold)}
+h1,h2,h3,p{margin-top:0}.hero h1{font-family:var(--serif);font-size:clamp(58px,7vw,94px);line-height:.99;letter-spacing:-.055em;font-weight:500;margin:24px 0}.hero h1 em{color:var(--gold2);font-weight:500}.hero-desc{max-width:490px;color:#c1beb7;font-size:15px;line-height:1.85;margin-bottom:29px}.actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--gold2);color:#17140f;border:0;border-radius:5px;padding:16px 22px;font-size:12px;font-weight:800;letter-spacing:.06em;transition:.2s}.btn-primary:hover{background:#fff0cf;transform:translateY(-2px)}.btn-text{font-size:12px;color:#d7d0c4;border-bottom:1px solid #6d624f;padding:9px 0}.micro{font-size:10px;color:#8e8a82;margin-top:18px;letter-spacing:.04em}
+.hero-art{height:495px;position:relative;display:flex;align-items:center;justify-content:center}.art-glow{position:absolute;width:370px;height:370px;border-radius:50%;background:#a57d3c24;filter:blur(55px)}
+.film-poster{width:min(340px,82%);height:465px;position:relative;overflow:hidden;border:1px solid #c9b58a55;box-shadow:0 30px 90px #000b;background:#1c2027}
+.film-poster:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#1115 0%,#1111 35%,#090a0de8 100%),url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1000&q=85') center/cover}
+.film-poster:after{content:"";position:absolute;inset:12px;border:1px solid #e8d7b055;pointer-events:none}
+.poster-inner{position:absolute;inset:30px;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center}
+.poster-kicker{font-size:8px;letter-spacing:.35em;color:#e7d9bd}.poster-center{margin-top:105px}.poster-name{font-family:var(--serif);font-size:48px;line-height:.95;text-shadow:0 3px 25px #000}.poster-sub{font-size:8px;letter-spacing:.27em;color:var(--gold2);margin-top:17px}.poster-film-title{font-family:var(--serif);font-size:28px;line-height:1.1;text-transform:uppercase;letter-spacing:.02em}.poster-bottom{font-size:7px;letter-spacing:.22em;color:#ddd2be}
+.poster-stamp{position:absolute;right:-3px;bottom:34px;z-index:3;background:var(--gold2);color:#16130e;padding:13px 17px;font-size:9px;letter-spacing:.16em;font-weight:800;transform:rotate(-4deg);box-shadow:0 10px 30px #0008}
+.float-note{position:absolute;left:-4px;bottom:52px;border:1px solid #ffffff24;background:#101216eF;padding:15px 18px;backdrop-filter:blur(12px);box-shadow:0 12px 30px #0008}.float-note b{display:block;font-family:var(--serif);font-size:20px;font-weight:500}.float-note span{font-size:9px;color:var(--muted);letter-spacing:.13em}
+.trust-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#b9b3a7;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.trust-strip span{display:flex;align-items:center;gap:10px}.dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.section{padding:105px 0;border-bottom:1px solid var(--line)}.section-head{max-width:660px;margin-bottom:42px}.section h2{font-family:var(--serif);font-size:clamp(38px,5vw,58px);font-weight:500;letter-spacing:-.04em;line-height:1.08;margin:18px 0}.section-intro{font-size:14px;line-height:1.8;color:var(--muted);max-width:570px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.step{background:var(--bg);padding:30px 27px;min-height:220px}.step-no{color:var(--gold);font-size:10px;letter-spacing:.2em}.step h3{font-family:var(--serif);font-size:25px;font-weight:500;margin:28px 0 10px}.step p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+.showcase{display:grid;grid-template-columns:.95fr 1.05fr;gap:65px;align-items:center}.showcase-art{height:420px;position:relative;background:linear-gradient(180deg,#171b22,#0c0e12);overflow:hidden;border:1px solid var(--line)}.showcase-art img{width:100%;height:100%;object-fit:cover;opacity:.68;filter:saturate(.7)}.showcase-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#090a0de8,transparent 75%)}.showcase-caption{position:absolute;bottom:25px;left:25px;z-index:2}.showcase-caption small{font-size:9px;letter-spacing:.2em;color:var(--gold2)}.showcase-caption strong{display:block;font-family:var(--serif);font-size:34px;font-weight:500;margin-top:8px}.benefits{display:grid;gap:22px;margin-top:30px}.benefit{display:grid;grid-template-columns:28px 1fr;gap:14px}.check{color:var(--gold);font-size:18px}.benefit b{display:block;font-size:13px;margin-bottom:5px}.benefit p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.price-card{position:relative;padding:32px;border:1px solid var(--line);background:linear-gradient(145deg,#14161b,#0c0d10);min-height:350px}.price-card.featured{border-color:#9d8150;background:linear-gradient(145deg,#211d16,#111216)}.popular{position:absolute;right:20px;top:20px;color:#1b160e;background:var(--gold2);font-size:8px;font-weight:800;letter-spacing:.15em;padding:7px 10px}.price-type{font-size:10px;letter-spacing:.2em;color:var(--gold)}.price-card h3{font-family:var(--serif);font-size:32px;font-weight:500;margin:17px 0 8px}.price-card p{font-size:12px;line-height:1.8;color:var(--muted);max-width:360px}.price-line{display:flex;align-items:baseline;gap:8px;margin:27px 0}.price-line strong{font-family:var(--serif);font-size:49px;font-weight:500}.price-line span{font-size:10px;color:var(--muted)}.feature-list{display:grid;gap:10px;margin:0 0 25px;padding:0;list-style:none;color:#d1ccc1;font-size:11px}.feature-list li:before{content:"✓";color:var(--gold);margin-right:10px}.choose-plan{width:100%;border:1px solid #6e6048;background:transparent;color:var(--gold2);padding:14px;border-radius:3px;font-size:10px;font-weight:800;letter-spacing:.12em}.featured .choose-plan{background:var(--gold2);color:#17140f;border-color:var(--gold2)}
+.creator{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px;align-items:start}.creator-info{padding:18px 0}.creator-info h2{max-width:440px}.creator-info p{font-size:13px;line-height:1.9;color:var(--muted)}.creator-card{background:#111318;border:1px solid var(--line);padding:26px}.field{margin-bottom:18px}.field label{display:block;font-size:9px;letter-spacing:.16em;color:#d4cdbf;margin-bottom:9px}.field input,.field select,.field textarea{width:100%;border:1px solid #383b42;background:#090a0d;color:var(--ink);padding:14px 13px;border-radius:3px;outline:none;font-size:12px}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{resize:vertical;min-height:78px}.field small{display:block;color:#8c8982;font-size:9px;margin-top:7px;line-height:1.6}.creator-preview{display:grid;grid-template-columns:190px 1fr;gap:20px;align-items:center;padding:18px;background:#0a0b0e;border:1px solid #2a2d34;margin-top:22px}.mini-poster{height:255px;position:relative;overflow:hidden;background:linear-gradient(0deg,#07090cf0,transparent 75%),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80') center/cover;border:1px solid #b69a6555;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:15px}.mini-poster small{font-size:7px;letter-spacing:.2em;color:var(--gold2)}.mini-poster strong{font-family:var(--serif);font-size:26px;line-height:1.05;margin:10px 0}.mini-copy h3{font-family:var(--serif);font-size:23px;font-weight:500;margin-bottom:8px}.mini-copy p{font-size:10px;line-height:1.7;color:var(--muted)}.mini-copy .hint{font-size:9px;color:#a99a7b}
+.checkout-wrap{background:radial-gradient(ellipse at 50% 0%,#292115 0%,#111318 48%,#0a0b0e 100%);border:1px solid #5a4b31;padding:clamp(20px,4vw,42px);position:relative;overflow:hidden}.checkout-wrap:before{content:"";position:absolute;inset:12px;border:1px solid #ffffff0c;pointer-events:none}.checkout-head{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:28px}.checkout-head h2{font-family:var(--serif);font-size:clamp(34px,4vw,48px);font-weight:500;margin:12px 0}.preview-label{border:1px solid #796541;color:var(--gold2);font-size:8px;letter-spacing:.15em;padding:9px 11px;white-space:nowrap}
+.checkout-layout{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.checkout-box{background:#0c0e12;border:1px solid #30333a;padding:22px}.checkout-box h3{font-size:13px;letter-spacing:.08em;margin:0 0 18px}.choice{width:100%;display:flex;align-items:center;justify-content:space-between;gap:15px;text-align:left;background:#14171c;border:1px solid #373a41;color:var(--ink);padding:16px;margin-bottom:10px;border-radius:3px}.choice.active{border-color:var(--gold);background:#211c13}.choice b{font-size:12px;display:block}.choice small{display:block;font-size:10px;color:var(--muted);margin-top:5px}.choice strong{font-family:var(--serif);font-size:23px;color:var(--gold2);white-space:nowrap}.choice .radio{width:15px;height:15px;border:1px solid #81765f;border-radius:50%;display:grid;place-items:center;flex-shrink:0}.choice.active .radio:after{content:"";width:7px;height:7px;background:var(--gold2);border-radius:50%}
+.payment-options{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.payment-choice{background:#fff;color:#101114;border:2px solid transparent;min-height:55px;border-radius:3px;font-weight:800;font-size:12px}.payment-choice.active{border-color:var(--gold)}.payment-choice.paypal{color:#123c70}.payment-choice.apple{color:#111}.payment-choice small{display:block;font-size:7px;letter-spacing:.08em;color:#777;margin-top:4px}
+.demo-card{margin-top:20px;min-height:170px;padding:18px 20px;background:linear-gradient(125deg,#343b49,#171d29 60%,#685334);border:1px solid #ffffff32;position:relative;overflow:hidden}.demo-card:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #ffffff24;border-radius:50%;right:-65px;top:-115px;box-shadow:0 0 0 18px #ffffff08,0 0 0 38px #ffffff06}.card-top,.card-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center}.card-brand{font-size:10px;font-weight:800;letter-spacing:.15em}.chip{width:31px;height:23px;background:linear-gradient(135deg,#f0dca5,#9b8652);border-radius:4px}.card-number{position:relative;z-index:1;font-size:17px;letter-spacing:.17em;margin:25px 0}.card-bottom{font-size:8px;letter-spacing:.12em;color:#e0ded8}.card-bottom b{font-size:18px;font-style:italic}
+.summary-line{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid #292c32;color:#bdb9b0;font-size:11px}.summary-line b{color:#f0ece3;font-weight:600;text-align:right}.summary-line.total{align-items:center;border:0;padding-top:22px}.summary-line.total span{font-size:12px;color:#fff}.summary-line.total strong{font-family:var(--serif);font-size:39px;font-weight:500;color:var(--gold2)}.currency{font-size:9px;letter-spacing:.16em;color:var(--gold);text-align:right;margin-top:4px}.pay-now{width:100%;border:0;background:var(--gold2);color:#17140f;padding:17px;margin-top:20px;font-size:10px;font-weight:900;letter-spacing:.13em}.pay-now:hover{background:#fff0d2}.checkout-disclaimer{font-size:9px;line-height:1.7;color:#96928a;text-align:center;margin:13px 0 0}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.faq-list details{border-bottom:1px solid var(--line);padding:18px 0}.faq-list summary{cursor:pointer;font-family:var(--serif);font-size:18px;list-style:none}.faq-list summary:after{content:"+";float:right;color:var(--gold);font-family:var(--sans)}.faq-list details[open] summary:after{content:"−"}.faq-list p{font-size:11px;line-height:1.8;color:var(--muted);margin:13px 30px 0 0}
+.footer{padding:35px 0 45px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#858179;font-size:9px;letter-spacing:.08em}.footer-brand{color:#d8d0c1;font-weight:800;letter-spacing:.17em}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:#f1d7a4;color:#16130d;padding:13px 20px;font-size:11px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:10;box-shadow:0 10px 35px #0008}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.shell{width:min(100% - 36px,620px)}.nav{height:70px}.navlinks{display:none}.hero{grid-template-columns:1fr;gap:30px;padding:55px 0 65px}.hero-copy{text-align:center}.hero-copy .eyebrow{justify-content:center}.hero h1{font-size:clamp(58px,13vw,82px)}.hero-desc{margin-left:auto;margin-right:auto}.actions{justify-content:center}.hero-art{height:440px;order:-1}.film-poster{height:405px;width:295px}.poster-center{margin-top:75px}.float-note{left:0;bottom:20px}.poster-stamp{right:0;bottom:30px}.trust-strip{justify-content:center;gap:16px 24px}.section{padding:75px 0}.showcase{grid-template-columns:1fr;gap:32px}.showcase-art{height:330px}.creator{grid-template-columns:1fr}.creator-info{padding:0}.checkout-layout{grid-template-columns:1fr}.faq{grid-template-columns:1fr;gap:20px}}
+@media(max-width:520px){.shell{width:calc(100% - 30px)}.nav-cta{font-size:9px;padding:10px 12px}.hero{padding-top:38px}.hero h1{font-size:57px;margin:18px 0}.hero-desc{font-size:13px}.hero-art{height:390px}.film-poster{height:365px;width:265px}.poster-center{margin-top:65px}.poster-name{font-size:41px}.poster-film-title{font-size:24px}.float-note{padding:11px 13px;bottom:10px}.float-note b{font-size:17px}.poster-stamp{font-size:7px;padding:10px 12px}.trust-strip{font-size:8px;gap:13px}.section h2{font-size:39px}.steps,.pricing-grid{grid-template-columns:1fr}.step{min-height:175px}.step h3{margin-top:18px}.price-card{padding:25px;min-height:0}.creator-card{padding:18px}.creator-preview{grid-template-columns:125px 1fr;padding:12px;gap:13px}.mini-poster{height:190px}.mini-poster strong{font-size:19px}.mini-copy h3{font-size:18px}.checkout-wrap{padding:18px 14px}.checkout-head{flex-direction:column}.checkout-box{padding:16px}.payment-options{grid-template-columns:1fr}.payment-choice{min-height:45px}.card-number{font-size:14px}.footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
 </head>
 <body>
-<div class="wrap">
-  <nav class="nav"><div class="brand">YLM<span style="color:var(--gold)">.</span> YOUR LIFE AS A MOVIE</div><div class="pill">A tiny movie about you</div></nav>
-  <section class="hero">
-    <div class="hero-copy">
-      <div class="eyebrow">YOU ARE THE MAIN CHARACTER</div>
-      <h1>Your life.<br>Your movie.<br><em>Your legend.</em></h1>
-      <p class="lead">Turn your face, your vibe and your story into a cinematic film starring you. Start with a 30–60 second trailer or go bigger with a movie up to 5 minutes.</p>
-      <a class="cta" href="#create">Build your movie</a>
-      <div class="sub">Made for sharing · Designed in seconds · No film crew needed</div>
-    </div>
-    <div class="poster-shell">
-      <div class="poster" id="heroPoster">
-        <div class="poster-top">A STORY ONLY YOU COULD LIVE</div>
-        <div><div class="poster-person" id="heroName">ALEX<br>STONE</div><div class="poster-tag" id="heroGenre">THE EPIC ADVENTURE</div></div>
-        <div><div class="poster-title" id="heroTitle">BEYOND<br>THE ORDINARY</div><div class="poster-footer">ONE LIFE. ONE SHOT. ONE LEGEND.</div></div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="eyebrow">HOW IT WORKS</div><h2>From your photo to your own movie.</h2>
-    <div class="cards">
-      <div class="card"><div class="num">01 / PERSONALIZE</div><h3>Choose your story</h3><p>Add your name, choose a genre and tell us the vibe. Your story becomes the starting point.</p></div>
-      <div class="card"><div class="num">02 / CREATE</div><h3>Meet your movie self</h3><p>Your photo and story become the foundation for a cinematic film starring you.</p></div>
-      <div class="card"><div class="num">03 / SHARE</div><h3>Drop the trailer</h3><p>Choose a short social trailer or a longer personal film, ready to share.</p></div>
-    </div>
-  </section>
-  <section class="section" id="create">
-    <div class="eyebrow">THE MOVIE MAKER</div><h2>Make yourself the main character.</h2>
-    <div class="builder">
-      <div class="formbox">
-        <div class="field"><label for="name">YOUR NAME OR NICKNAME</label><input id="name" maxlength="24" placeholder="e.g. Alex Stone" value="Alex Stone"></div>
-        <div class="field"><label for="genre">PICK YOUR GENRE</label><select id="genre"><option value="Adventure">Epic Adventure</option><option value="Romance">Romance</option><option value="Comedy">Comedy</option><option value="Thriller">Thriller</option><option value="Sci-Fi">Sci-Fi</option><option value="Fantasy">Fantasy</option></select></div>
-        <div class="field"><label for="vibe">YOUR VIBE</label><select id="vibe"><option value="fearless">Fearless & unstoppable</option><option value="chaotic">Chaotic but iconic</option><option value="romantic">A hopeless romantic</option><option value="mysterious">Quietly mysterious</option><option value="funny">Born to be the plot twist</option></select></div>
-        <button class="cta" style="width:100%" id="make">Generate my movie poster</button>
-        <div class="hint" style="margin-top:12px">Prototype only: this demo creates a designed preview in your browser. Real AI image/video generation and payments are not connected yet.</div>
-      </div>
-      <div class="previewbox">
-        <div class="poster" id="resultPoster">
-          <div class="poster-top">THE WORLD IS WATCHING</div>
-          <div><div class="poster-person" id="resultName">ALEX<br>STONE</div><div class="poster-tag" id="resultGenre">THE EPIC ADVENTURE</div></div>
-          <div><div class="poster-title" id="resultTitle">BEYOND<br>THE ORDINARY</div><div class="poster-footer" id="resultTagline">ONE LIFE. ZERO REHEARSALS.</div></div>
-        </div>
-        <div class="preview-actions"><button class="secondary" id="download">Download poster preview</button><button class="secondary" id="share">Share concept</button></div>
-        <div class="pricebox"><div><div style="font-size:12px;color:var(--muted)">PERSONAL MOVIE EXPERIENCE</div><strong>30–60 sec teaser · Full film up to 5 min</strong></div><div class="price">From $3</div></div>
-        <div class="notice">Checkout is not live yet. Before accepting real payments, connect a payment provider and only charge once the real deliverable can be generated and delivered reliably.</div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="eyebrow">BUILT TO BE SHARED</div><h2>Your movie deserves an audience.</h2>
-    <p class="lead">The launch plan: post short before-and-after demos, show different genres, invite people to make their own movie, and track which videos bring real visitors and purchases.</p>
-  </section>
-  <section class="section" id="film-options">
-    <div class="eyebrow">CHOOSE YOUR STORY</div><h2>Not just a poster. A movie about you.</h2>
-    <div class="cards">
-      <div class="card"><div class="num">01 / THE TEASER</div><h3>30–60 seconds</h3><p>A fast, cinematic introduction starring you. Designed for Reels, TikTok and sharing.</p><div class="price" style="margin-top:16px">$3</div></div>
-      <div class="card"><div class="num">02 / THE FULL STORY</div><h3>Up to 5 minutes</h3><p>A longer personal movie with room for more scenes, atmosphere and story.</p><div class="price" style="margin-top:16px">$9.99</div></div>
-      <div class="card"><div class="num">03 / COMING NEXT</div><h3>Your story, expanded</h3><p>More genres, story styles and personalized scenes as the production experience grows.</p><div class="price" style="margin-top:16px">In development</div></div>
-    </div>
-    <div class="notice">These are planned product options, not an active checkout. AI video generation, photo processing and payment are not connected yet. No payment is collected in this prototype.</div>
-  </section>
-
-
-  <section class="section" id="checkout">
-    <div class="eyebrow">CHECKOUT PREVIEW</div>
-    <h2>One last step to your movie.</h2>
-    <div class="payment-section">
-      <div class="payment-heading">
-        <h3>Payment</h3>
-        <div class="secure">● CHECKOUT PREVIEW</div>
-      </div>
-      <div class="plan-list">
-        <button class="plan selected" type="button" data-plan="teaser" aria-pressed="true">
-          <strong>THE CINEMATIC TEASER</strong>
-          <small>30–60 seconds · Your personal movie trailer</small>
-          <span class="plan-price">$3.00 USD</span>
-        </button>
-        <button class="plan" type="button" data-plan="full" aria-pressed="false">
-          <strong>THE FULL MOVIE</strong>
-          <small>Up to 5 minutes · Your story on screen</small>
-          <span class="plan-price">$9.99 USD</span>
-        </button>
-      </div>
-      <div class="checkout-grid">
-        <div class="checkout-panel">
-          <div class="demo-tag">DEMO CARD · NOT FOR PAYMENT</div>
-          <div class="money-card" style="margin-top:14px">
-            <div class="money-card-top"><span class="money-card-brand">YOUR LIFE AS A MOVIE</span><span class="money-chip"></span></div>
-            <div class="money-number">•••• &nbsp; •••• &nbsp; •••• &nbsp; 4242</div>
-            <div class="money-card-bottom"><span>DEMO CARDHOLDER<br>YOUR MOVIE</span><span>VISA</span></div>
-          </div>
-          <div class="pay-label">CHOOSE A PAYMENT METHOD</div>
-          <div class="method-option demo-selected"><span class="method-symbol">VISA</span><span>Credit / Debit Card</span><span class="method-mark">DEMO</span></div>
-          <div class="method-option paypal-row"><span class="method-symbol">P</span><span>PayPal</span><span class="method-mark">PREVIEW</span></div>
-          <div class="method-option"><span class="method-symbol" style="font-size:16px">Pay</span><span>Apple Pay</span><span class="method-mark">PREVIEW</span></div>
-          <p class="checkout-foot">The card graphic and payment choices are visual examples only. Do not enter real card details.</p>
-        </div>
-        <div class="checkout-panel">
-          <div class="demo-tag">ORDER SUMMARY · USD</div>
-          <div class="checkout-summary" style="margin-top:15px"><span>YOUR MOVIE</span><strong id="summaryPlan">Cinematic teaser</strong></div>
-          <div class="checkout-summary"><span>Subtotal</span><strong id="summarySubtotal">$3.00</strong></div>
-          <div class="checkout-summary"><span>Taxes</span><strong>Calculated at checkout</strong></div>
-          <div class="checkout-summary total"><span>Total today</span><strong id="checkoutTotal">$3.00</strong></div>
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:15px;color:#a5a5b2;font-size:11px"><span>PAYMENT CURRENCY</span><span class="money-currency">USD $</span></div>
-          <button class="order-button" type="button" id="checkoutButton">Preview order · $3.00</button>
-          <p class="checkout-foot" style="text-align:center">This is a design preview, not a live payment gateway. No charge will be made and no card data is collected.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer"><div>© 2026 YOUR LIFE AS A MOVIE — concept prototype</div><div>Privacy · Terms · Contact (to be added before launch)</div></footer>
-</div>
+<div class="topline"></div>
+<header class="shell nav">
+ <a class="logo" href="#"><b>YLM.</b> YOUR LIFE AS A MOVIE</a>
+ <nav class="navlinks"><a href="#experience">THE EXPERIENCE</a><a href="#pricing">PRICING</a><a href="#create">MAKE YOURS</a></nav>
+ <a class="nav-cta" href="#pricing">CHOOSE YOUR FILM ↗</a>
+</header>
+<main>
+<section class="shell hero">
+ <div class="hero-copy">
+  <div class="eyebrow">YOUR STORY, CINEMATICALLY TOLD</div>
+  <h1>The world<br>has seen <em>movies.</em><br>Now see you.</h1>
+  <p class="hero-desc">Imagine your face on the big screen. Your name in the title. Your story turned into a cinematic experience made to feel like a film trailer — because the main character was always you.</p>
+  <div class="actions"><a class="btn-primary" href="#pricing">CREATE YOUR MOVIE <span>↗</span></a><a class="btn-text" href="#experience">DISCOVER THE EXPERIENCE</a></div>
+  <div class="micro">A personal movie concept · Choose your story · Made to be shared</div>
+ </div>
+ <div class="hero-art">
+  <div class="art-glow"></div>
+  <div class="film-poster"><div class="poster-inner"><div class="poster-kicker">AN ORIGINAL STORY</div><div class="poster-center"><div class="poster-name" id="heroName">YOUR<br>NAME</div><div class="poster-sub">THE STORY IS YOURS</div></div><div><div class="poster-film-title" id="heroTitle">BEYOND<br>THE ORDINARY</div><div class="poster-bottom">ONE LIFE. ONE STORY. YOURS.</div></div></div></div>
+  <div class="poster-stamp">STARRING YOU</div>
+  <div class="float-note"><b>Your name.</b><span>YOUR OWN CINEMATIC WORLD</span></div>
+ </div>
+</section>
+<div class="shell trust-strip"><span><i class="dot"></i> MADE AROUND YOUR STORY</span><span><i class="dot"></i> TWO FILM LENGTHS</span><span><i class="dot"></i> PRICING IN USD</span><span><i class="dot"></i> BUILT FOR SHARING</span></div>
+<section class="section" id="experience"><div class="shell">
+ <div class="section-head"><div class="eyebrow">THE EXPERIENCE</div><h2>Not another photo.<br>A story with you at the centre.</h2><p class="section-intro">A personal film should feel personal from the first frame. Shape the mood, choose the genre and imagine the story you want the world to see.</p></div>
+ <div class="steps">
+  <article class="step"><div class="step-no">01 — YOUR IDENTITY</div><h3>Start with you</h3><p>Your name, your image and the details that make your story yours are the creative starting point.</p></article>
+  <article class="step"><div class="step-no">02 — YOUR WORLD</div><h3>Set the scene</h3><p>Choose a genre and a feeling — from an epic adventure to a love story or a plot twist.</p></article>
+  <article class="step"><div class="step-no">03 — YOUR FILM</div><h3>Take the spotlight</h3><p>Choose a short teaser or a longer movie concept, then share your moment with the world.</p></article>
+ </div>
+</div></section>
+<section class="section"><div class="shell showcase">
+ <div class="showcase-art"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=85" alt="Cinematic movie theatre with a large screen"><div class="showcase-caption"><small>THIS TIME, IT'S PERSONAL</small><strong>The lead role is yours.</strong></div></div>
+ <div><div class="eyebrow">A DIFFERENT KIND OF GIFT</div><h2>Give someone<br>their own movie moment.</h2><p class="section-intro">For birthdays, anniversaries, celebrations — or simply because an ordinary day deserves an extraordinary story.</p>
+  <div class="benefits"><div class="benefit"><div class="check">✦</div><div><b>A story shaped around one person</b><p>Make the experience feel like it belongs to the person watching it.</p></div></div><div class="benefit"><div class="check">✦</div><div><b>Choose the scale of the story</b><p>A quick cinematic teaser or a longer film with more room to unfold.</p></div></div><div class="benefit"><div class="check">✦</div><div><b>Made for the big reveal</b><p>A memorable surprise to send, post or watch together.</p></div></div></div>
+ </div>
+</div></section>
+<section class="section" id="pricing"><div class="shell">
+ <div class="section-head"><div class="eyebrow">CHOOSE YOUR CUT</div><h2>One story.<br>Two ways to tell it.</h2><p class="section-intro">Start small or give your story more screen time. Choose the experience that feels right.</p></div>
+ <div class="pricing-grid">
+  <article class="price-card"><div class="price-type">THE FIRST LOOK</div><h3>Cinematic Teaser</h3><p>A short, punchy introduction to your story — made for the scroll, the group chat and the big reveal.</p><div class="price-line"><strong>$3</strong><span>USD · one-time concept price</span></div><ul class="feature-list"><li>30–60 second format</li><li>Personalized movie concept</li><li>Designed for social sharing</li></ul><button class="choose-plan" data-select="teaser">CHOOSE THE TEASER ↗</button></article>
+  <article class="price-card featured"><div class="popular">MORE SCREEN TIME</div><div class="price-type">THE FULL EXPERIENCE</div><h3>Your Full Movie</h3><p>More time for the scenes, the atmosphere and the story. Your life gets the feature presentation.</p><div class="price-line"><strong>$9.99</strong><span>USD · one-time concept price</span></div><ul class="feature-list"><li>Up to 5 minutes</li><li>Expanded personal movie concept</li><li>More room for your story</li></ul><button class="choose-plan" data-select="full">CHOOSE THE FULL MOVIE ↗</button></article>
+ </div>
+</div></section>
+<section class="section" id="create"><div class="shell creator">
+ <div class="creator-info"><div class="eyebrow">YOUR CREATIVE PREVIEW</div><h2>Let's put your name in lights.</h2><p>Try a few details and see a sample movie-poster concept update instantly. This preview is a design demo — it does not generate an AI film or upload a photo.</p><div class="micro">NO ACCOUNT NEEDED TO EXPLORE THE CONCEPT</div></div>
+ <div class="creator-card">
+  <div class="field"><label for="name">YOUR NAME OR NICKNAME</label><input id="name" maxlength="26" placeholder="e.g. Alex Stone" value="Your Name"></div>
+  <div class="field"><label for="genre">CHOOSE YOUR MOVIE GENRE</label><select id="genre"><option value="Adventure">Epic Adventure</option><option value="Romance">A Love Story</option><option value="Thriller">Thriller</option><option value="Comedy">Comedy</option><option value="Fantasy">Fantasy</option><option value="Sci-Fi">Science Fiction</option></select></div>
+  <div class="field"><label for="story">ONE LINE ABOUT YOUR STORY (OPTIONAL)</label><textarea id="story" maxlength="120" placeholder="A dream, a journey, a second chance..."></textarea><small>This text changes the sample tagline only. Don't enter private or sensitive information.</small></div>
+  <button class="btn-primary" id="refreshPreview" type="button">UPDATE MY PREVIEW ↗</button>
+  <div class="creator-preview"><div class="mini-poster"><small>AN ORIGINAL STORY</small><strong id="previewName">YOUR NAME</strong><small id="previewGenre">EPIC ADVENTURE</small></div><div class="mini-copy"><h3 id="previewTitle">Your story awaits.</h3><p id="previewTagline">A first look at how your own cinematic world could feel.</p><div class="hint">SAMPLE POSTER CONCEPT · NOT A GENERATED FILM</div></div></div>
+ </div>
+</div></section>
+<section class="section" id="checkout"><div class="shell">
+ <div class="checkout-wrap">
+  <div class="checkout-head"><div><div class="eyebrow">THE FINAL FRAME</div><h2>Your movie starts here.</h2><p class="section-intro">Choose your format and review the sample order below.</p></div><div class="preview-label">PAYMENT DESIGN PREVIEW</div></div>
+  <div class="checkout-layout">
+   <div class="checkout-box"><h3>01 / SELECT YOUR MOVIE</h3>
+    <button class="choice active" data-plan="teaser" type="button"><span class="radio"></span><span style="flex:1"><b>Cinematic Teaser</b><small>30–60 seconds · Personal movie trailer</small></span><strong>$3.00</strong></button>
+    <button class="choice" data-plan="full" type="button"><span class="radio"></span><span style="flex:1"><b>Your Full Movie</b><small>Up to 5 minutes · Extended story</small></span><strong>$9.99</strong></button>
+    <h3 style="margin-top:25px">02 / PAYMENT METHOD PREVIEW</h3>
+    <div class="payment-options"><button class="payment-choice active" data-method="card" type="button">VISA <small>DEMO ONLY</small></button><button class="payment-choice paypal" data-method="paypal" type="button">PayPal <small>DEMO ONLY</small></button><button class="payment-choice apple" data-method="apple" type="button">Pay <small>APPLE PAY STYLE</small></button></div>
+    <div class="demo-card"><div class="card-top"><span class="card-brand">YOUR LIFE AS A MOVIE</span><span class="chip"></span></div><div class="card-number">•••• &nbsp; •••• &nbsp; •••• &nbsp; 4242</div><div class="card-bottom"><span>DEMO CARDHOLDER<br>YOUR MOVIE</span><b>VISA</b></div></div>
+   </div>
+   <div class="checkout-box"><h3>03 / ORDER SUMMARY</h3>
+    <div class="summary-line"><span>Selected experience</span><b id="orderName">Cinematic Teaser</b></div>
+    <div class="summary-line"><span>Subtotal</span><b id="subtotal">$3.00</b></div>
+    <div class="summary-line"><span>Currency</span><b>USD · US Dollar</b></div>
+    <div class="summary-line total"><span>Total</span><strong id="total">$3.00</strong></div>
+    <div class="currency">ONE-TIME CONCEPT PRICE</div>
+    <button class="pay-now" id="previewOrder" type="button">PREVIEW MY ORDER — $3.00</button>
+    <p class="checkout-disclaimer">Important: this is a visual checkout mockup only. No payment provider is connected, no order is placed, and no card or PayPal details are collected. The film-generation service is not live yet.</p>
+   </div>
+  </div>
+ </div>
+</div></section>
+<section class="section"><div class="shell faq">
+ <div><div class="eyebrow">GOOD TO KNOW</div><h2>A few things<br>before the credits.</h2><p class="section-intro">Clear expectations matter. Here's what this early version can — and can't — do.</p></div>
+ <div class="faq-list">
+  <details open><summary>Is the movie generator live?</summary><p>Not yet. This website currently demonstrates the concept, the sample poster and the planned packages. AI photo/video generation and delivery still need to be built and connected.</p></details>
+  <details><summary>Can I pay $3 or $9.99 right now?</summary><p>No. The prices are planned concept prices. The checkout on this page is a visual preview only and cannot charge a card or accept PayPal.</p></details>
+  <details><summary>Will I need to upload a photo?</summary><p>The intended product is a personalized film starring the customer. A real photo-upload flow, consent, secure processing and deletion controls must be implemented before launch.</p></details>
+  <details><summary>When will my movie arrive?</summary><p>Delivery timing will be published once the generation and fulfillment process is working reliably. No delivery promise is being made in this prototype.</p></details>
+ </div>
+</div></section>
+</main>
+<footer class="shell footer"><div><div class="footer-brand">YLM. YOUR LIFE AS A MOVIE</div><div style="margin-top:9px">© 2026 · THE STORY IS YOURS.</div></div><div>EARLY CONCEPT PREVIEW · NOT YET ACCEPTING ORDERS</div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 const $=id=>document.getElementById(id);
-const titles={
- Adventure:["BEYOND THE ORDINARY","ONE LIFE. ZERO REHEARSALS."],
- Romance:["THE WAY WE FOUND US","SOME STORIES FIND YOU."],
- Comedy:["A BEAUTIFUL DISASTER","THE PLOT WAS NEVER READY."],
- Thriller:["EVERYTHING HAS A PRICE","TRUST NO FIRST IMPRESSION."],
- "Sci-Fi":["AFTER THE LAST STAR","THE FUTURE KNOWS YOUR NAME."],
- Fantasy:["BORN OF ANOTHER WORLD","DESTINY HAS A NEW NAME."]
-};
-const genres={Adventure:"THE EPIC ADVENTURE",Romance:"A LOVE STORY",Comedy:"THE COMEDY EVENT",Thriller:"THE EDGE-OF-YOUR-SEAT THRILLER","Sci-Fi":"A FUTURE UNWRITTEN",Fantasy:"A LEGEND AWAKENS"};
-function update(){
- let name=($("name").value.trim()||"Your Name").toUpperCase().replace(/[<>]/g,"");
- let genre=$("genre").value, vibe=$("vibe").value;
- let lines=name.split(/\s+/).slice(0,3).join("<br>");
- $("resultName").innerHTML=lines;$("resultGenre").textContent=genres[genre];
- $("resultTitle").innerHTML=titles[genre][0].replace(" ","<br>");
- const vibeLines={fearless:"ONE LIFE. ZERO REHEARSALS.",chaotic:"THE PLOT WAS NEVER READY.",romantic:"SOME STORIES FIND YOU.",mysterious:"NOT EVERY SECRET STAYS BURIED.",funny:"THE PLOT TWIST IS YOU."};
- $("resultTagline").textContent=vibeLines[vibe];
- $("heroName").innerHTML=lines;$("heroGenre").textContent=genres[genre];$("heroTitle").innerHTML=titles[genre][0].replace(" ","<br>");
+const genreTitles={Adventure:"Beyond the Ordinary",Romance:"The Way We Found Us",Thriller:"Every Story Has a Secret",Comedy:"A Beautiful Disaster",Fantasy:"A Legend Awakens","Sci-Fi":"After the Last Star"};
+let selectedPlan="teaser";
+function updatePreview(){
+ const raw=$("name").value.trim()||"Your Name";
+ const name=raw.replace(/[<>]/g,"").slice(0,26);
+ const genre=$("genre").value;
+ const story=$("story").value.trim();
+ $("heroName").textContent=name.toUpperCase();
+ $("previewName").textContent=name.toUpperCase();
+ $("heroTitle").textContent=genreTitles[genre].toUpperCase();
+ $("previewGenre").textContent=genre.toUpperCase();
+ $("previewTitle").textContent=genreTitles[genre]+".";
+ $("previewTagline").textContent=story||"A first look at how your own cinematic world could feel.";
 }
-$("make").addEventListener("click",update);
-["name","genre","vibe"].forEach(id=>$(id).addEventListener("input",update));
-$("download").addEventListener("click",()=>{
- const p=$("resultPoster"), canvas=document.createElement("canvas"),ctx=canvas.getContext("2d");
- canvas.width=900;canvas.height=1350;
- const grad=ctx.createLinearGradient(0,0,0,1350);grad.addColorStop(0,"#392e44");grad.addColorStop(.5,"#151827");grad.addColorStop(1,"#08090d");ctx.fillStyle=grad;ctx.fillRect(0,0,900,1350);
- const glow=ctx.createRadialGradient(450,470,20,450,470,380);glow.addColorStop(0,"#e3a15b66");glow.addColorStop(1,"#e3a15b00");ctx.fillStyle=glow;ctx.fillRect(0,0,900,1350);
- ctx.textAlign="center";ctx.fillStyle="#e7d7c0";ctx.font="20px Arial";ctx.fillText("THE WORLD IS WATCHING",450,90);
- ctx.fillStyle="#f7f5f0";ctx.font="bold 88px Georgia";let n=$("name").value.trim().toUpperCase()||"YOUR NAME";let nameLines=n.split(/\s+/).slice(0,3);nameLines.forEach((l,i)=>ctx.fillText(l,450,450+i*90,800));
- ctx.fillStyle="#f6c96b";ctx.font="bold 22px Arial";ctx.fillText(genres[$("genre").value],450,760);
- let title=titles[$("genre").value][0].split(" ");ctx.fillStyle="#fffaf0";ctx.font="bold 58px Georgia";ctx.fillText(title.slice(0,Math.ceil(title.length/2)).join(" "),450,980,820);ctx.fillText(title.slice(Math.ceil(title.length/2)).join(" "),450,1050,820);
- ctx.fillStyle="#c6c0bd";ctx.font="18px Arial";ctx.fillText($("resultTagline").textContent,450,1190);
- ctx.fillStyle="#a5a5b2";ctx.font="13px Arial";ctx.fillText("CONCEPT PREVIEW • YOUR LIFE AS A MOVIE",450,1290);
- const a=document.createElement("a");a.download="your-life-as-a-movie-preview.png";a.href=canvas.toDataURL("image/png");a.click();
-});
-$("share").addEventListener("click",async()=>{
- const text="I just made myself the main character. YOUR LIFE AS A MOVIE — concept preview.";
- if(navigator.share){try{await navigator.share({title:"Your Life As A Movie",text})}catch(e){}}
- else if(navigator.clipboard){navigator.clipboard.writeText(text);alert("Share text copied. Add your live site link before launch.");}
- else alert(text);
-});
-update();
-
-document.querySelectorAll(".plan").forEach(btn=>btn.addEventListener("click",()=>{
-  document.querySelectorAll(".plan").forEach(p=>{p.classList.remove("selected");p.setAttribute("aria-pressed","false")});
-  btn.classList.add("selected");btn.setAttribute("aria-pressed","true");
-  const full=btn.dataset.plan==="full";
-  const amount=full?"$9.99":"$3.00";
-  $("checkoutTotal").textContent=amount;
-  $("summarySubtotal").textContent=amount;
-  $("summaryPlan").textContent=full?"Full movie":"Cinematic teaser";
-  $("checkoutButton").textContent="Preview order · "+amount;
+["name","genre","story"].forEach(id=>$(id).addEventListener("input",updatePreview));
+$("refreshPreview").addEventListener("click",()=>{updatePreview();showToast("Your sample movie concept has been updated.");});
+function setPlan(plan){
+ selectedPlan=plan;
+ const full=plan==="full",price=full?"$9.99":"$3.00";
+ document.querySelectorAll("[data-plan]").forEach(el=>el.classList.toggle("active",el.dataset.plan===plan));
+ document.querySelectorAll("[data-plan]").forEach(el=>el.setAttribute("aria-pressed",String(el.dataset.plan===plan)));
+ $("orderName").textContent=full?"Your Full Movie":"Cinematic Teaser";
+ $("subtotal").textContent=price;$("total").textContent=price;
+ $("previewOrder").textContent="PREVIEW MY ORDER — "+price;
+}
+document.querySelectorAll("[data-plan]").forEach(el=>el.addEventListener("click",()=>setPlan(el.dataset.plan)));
+document.querySelectorAll("[data-select]").forEach(el=>el.addEventListener("click",()=>{setPlan(el.dataset.select);$("checkout").scrollIntoView({behavior:"smooth"});}));
+document.querySelectorAll("[data-method]").forEach(el=>el.addEventListener("click",()=>{
+ document.querySelectorAll("[data-method]").forEach(x=>x.classList.toggle("active",x===el));
+ showToast("Payment selection preview only — no payment method is connected.");
 }));
-$("checkoutButton").addEventListener("click",()=>{
-  alert("Demo only: payment processing is not connected. No payment was made.");
-});
-\n</script>
+function showToast(message){const t=$("toast");t.textContent=message;t.classList.add("show");clearTimeout(window.__toastTimer);window.__toastTimer=setTimeout(()=>t.classList.remove("show"),2600);}
+$("previewOrder").addEventListener("click",()=>showToast("Preview only. Checkout and movie production are not live yet."));
+updatePreview();setPlan("teaser");
+</script>
 </body>
 </html>
